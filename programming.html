@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Caveat&family=Kaisei+Opti:wght@400;700&family=M+PLUS+1p:wght@500&family=Noto+Serif+JP:wght@300&family=PT+Serif&family=Playfair+Display:wght@500&family=Sawarabi+Mincho&display=swap');
+    </style>
+    <title>Programming</title>
+
+    <button id="button">←Home</button>
+    <div class="header-logo-menu">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul class="category">
+              <li class="category-title"><a href="index.html">Home</a></li>
+              <li class="category-title"><a href="prof.html">Profile</a></li>
+              <li class="category-title"><a href="photo.html">Photo</a></li>
+              <li class="category-title"><a href="movie.html">Movie</a></li>
+              <li class="category-title"><a href="design.html">Design</a></li>
+              <li class="category-title"><a href="programming.html">Programming</a></li>
+              <li class="category-title"><a href="other.html">Other Works</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="pop">画像をクリックすると作品の詳細が表示されます</p>
+
+      <div class="modal_pop">
+        <div class="bg js-modal-close"></div>
+        <div class="modal_pop_main">
+          <img src="img/p1pop.PNG">
+        </div>
+      </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/p2pop.PNG">
+          </div>
+        </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/p3pop.PNG">
+          </div>
+        </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/p4pop.PNG">
+          </div>
+        </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/p5pop.PNG">
+            </div>
+          </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/p6pop.PNG">
+            </div>
+          </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/p7pop.PNG">
+            </div>
+          </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/p8pop.PNG">
+          </div>
+        </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/p9pop.PNG">
+            </div>
+          </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/p10pop.PNG">
+            </div>
+          </div>
+</head>
+<body>
+<main>
+    <div class="program">
+        <p class="program1">Javascript・HTML・CSS</p>
+        <img class ="p1" src="img/ja1.png">
+        <img class ="p2" src="img/ja2.png">
+        <img class ="p3" src="img/ja3.png">
+        <img class ="p4" src="img/ja4.png">
+        <img class ="p5" src="img/ja5.png">
+        <p class="program2">Python</p>
+        <img class ="p6" src="img/py1.png">
+        <img class ="p7" src="img/py2.png">
+        <p class="program3">Unity</p>
+        <img class ="p8" src="img/uni1.png">
+        <img class ="p9" src="img/uni3.png">
+        <img class ="p10" src="img/uni2.png"> 
+    </div>
+  </main>
+  <script>
+  $("button").click(function(){
+    window.location.href = 'index.html';
+  });
+  
+  $('.p1').on('click', function() {
+    $('.modal_pop').eq(0).fadeIn();
+  });
+  $('.p2').on('click', function() {
+    $('.modal_pop').eq(1).fadeIn();
+  });
+  $('.p3').on('click', function() {
+    $('.modal_pop').eq(2).fadeIn();
+  });
+  $('.p4').on('click', function() {
+    $('.modal_pop').eq(3).fadeIn();
+  });
+  $('.p5').on('click', function() {
+    $('.modal_pop').eq(4).fadeIn();
+  });
+  $('.p6').on('click', function() {
+    $('.modal_pop').eq(5).fadeIn();
+  });
+  $('.p7').on('click', function() {
+    $('.modal_pop').eq(6).fadeIn();
+  });
+  $('.p8').on('click', function() {
+    $('.modal_pop').eq(7).fadeIn();
+  });
+  $('.p9').on('click', function() {
+    $('.modal_pop').eq(8).fadeIn();
+  });
+  $('.p10').on('click', function() {
+    $('.modal_pop').eq(9).fadeIn();
+  });
+  $('.js-modal-close').on('click', function(){
+    $('.modal_pop').fadeOut();
+    $('.modal_pop iframe').attr('src', '');
+  });
+  </script>
+</body>
+<footer>
+    <p>contact:dodo286835@gmail.com</p>
+</footer>
+</html>
