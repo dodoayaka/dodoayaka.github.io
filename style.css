@@ -310,12 +310,11 @@ img {
     text-align:center;
 }
 footer{
+    text-align: center;
     color: #fff;
     border-top:solid 1px #fff;
     margin: 4em;
-    text-align: center;
     font-family: 'Playfair Display', serif;
-}
 }
 
 /* タブレットサイズ 761〜1024*/
