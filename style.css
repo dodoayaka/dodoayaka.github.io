@@ -222,7 +222,7 @@ header {
     width: 90%;
     max-width: 300px;   /*最大幅（調整する）*/
     height: 100%;
-    background: #ffffff;
+    background:#dcdcdc;
     transition: .3s ease-in-out;
     -webkit-transform: translateX(105%);
     transform: translateX(105%);
