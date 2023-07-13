@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Caveat&family=Kaisei+Opti:wght@400;700&family=M+PLUS+1p:wght@500&family=Noto+Serif+JP:wght@300&family=PT+Serif&family=Playfair+Display:wght@500&family=Sawarabi+Mincho&display=swap');
+    </style>
+    <title>Design</title>
+
+    <button id="button">←Home</button>
+    <div class="header-logo-menu">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul class="category">
+              <li class="category-title"><a href="index.html">Home</a></li>
+              <li class="category-title"><a href="prof.html">Profile</a></li>
+              <li class="category-title"><a href="photo.html">Photo</a></li>
+              <li class="category-title"><a href="movie.html">Movie</a></li>
+              <li class="category-title"><a href="design.html">Design</a></li>
+              <li class="category-title"><a href="programming.html">Programming</a></li>
+              <li class="category-title"><a href="other.html">Other Works</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="pop">画像をクリックすると作品の詳細が表示されます</p>
+
+      <div class="modal_pop">
+        <div class="bg js-modal-close"></div>
+        <div class="modal_pop_main">
+          <img src="img/d1pop.PNG">
+        </div>
+      </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/d2pop.PNG">
+          </div>
+        </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/d3pop.PNG">
+          </div>
+        </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/d4pop.PNG">
+          </div>
+        </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/d5pop.PNG">
+            </div>
+          </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/d6pop.PNG">
+            </div>
+          </div>
+          <div class="modal_pop">
+            <div class="bg js-modal-close"></div>
+            <div class="modal_pop_main">
+              <img src="img/d7pop.PNG">
+            </div>
+          </div>
+        <div class="modal_pop">
+          <div class="bg js-modal-close"></div>
+          <div class="modal_pop_main">
+            <img src="img/d8pop.PNG">
+          </div>
+        </div>
+</head>
+<body>
+<main>
+    <div class="design">
+    <div class="UI">
+        <img class ="d1" src="img/de11.png">
+        <a href="https://www.figma.com/file/AzZyFEMzmGmdPkKBz8DHos/Relax-Time?type=design&mode=design&t=84zvaHVahfqS1NVn-1">FigmaURL</a>
+        <img class ="d2" src="img/de22.png">
+        <a href="https://www.figma.com/file/43879HvTEw2Q2qpX1ikim1/dish-life?type=design&mode=design&t=84zvaHVahfqS1NVn-1">FigmaURL</a>
+        <img class ="d3" src="img/de33.png">
+        <a href="https://www.figma.com/file/eG44C2u735dFEeZjmmaYjp/%E9%98%B2%E7%81%BD%E8%A1%8C%E5%8B%95%E3%82%AF%E3%82%A4%E3%82%BA?type=design&node-id=0%3A1&mode=design&t=84zvaHVahfqS1NVn-1">FigmaURL</a>
+        <img class ="d4" src="img/de44.png">
+        <a href="https://www.figma.com/file/4aiIxR1blksyrL6dWwlbsh/Encounter-with-novel?type=design&node-id=0%3A1&mode=design&t=UcrMh48CyI6uulm1-1">FigmaURL</a>
+    </div>
+
+    <div class="illust">
+        <img class ="d5" src="img/il1.jpg">
+        <img class ="d6" src="img/il3.png">
+        <img class ="d7" src="img/il4.png">
+        <img class ="d8"src="img/il5.png">
+    </div>
+    </div>
+  </main>
+<script>
+$("button").click(function(){
+  window.location.href = 'index.html';
+});
+
+$('.d1').on('click', function() {
+  $('.modal_pop').eq(0).fadeIn();
+});
+$('.d2').on('click', function() {
+  $('.modal_pop').eq(1).fadeIn();
+});
+$('.d3').on('click', function() {
+  $('.modal_pop').eq(2).fadeIn();
+});
+$('.d4').on('click', function() {
+  $('.modal_pop').eq(3).fadeIn();
+});
+$('.d5').on('click', function() {
+  $('.modal_pop').eq(4).fadeIn();
+});
+$('.d6').on('click', function() {
+  $('.modal_pop').eq(5).fadeIn();
+});
+$('.d7').on('click', function() {
+  $('.modal_pop').eq(6).fadeIn();
+});
+$('.d8').on('click', function() {
+  $('.modal_pop').eq(7).fadeIn();
+});
+$('.js-modal-close').on('click', function(){
+  $('.modal_pop').fadeOut();
+  $('.modal_pop iframe').attr('src', '');
+});
+</script>    
+</body>
+<footer>
+    <p>contact:dodo286835@gmail.com</p>
+</footer>
+</html>
