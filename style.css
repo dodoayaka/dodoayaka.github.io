@@ -24,7 +24,7 @@ button{
 h1 {
     font-size: 50px;
     color: #fff;
-    margin: 1.7em;
+    margin: 1.5em;
     text-align: center;
 }
 p {
@@ -309,6 +309,13 @@ img {
 .myphoto{
     text-align:center;
 }
+footer{
+    color: #fff;
+    border-top:solid 1px #fff;
+    margin: 4em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
 }
 
 /* タブレットサイズ 761〜1024*/
@@ -375,6 +382,13 @@ img {
         width: 700px;
         height: 550px;
     }
+    footer{
+    color: #fff;
+    border-top:solid 1px #fff;
+    margin: 4em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
 }
 
 /* デスクトップサイズ 1025以上*/
@@ -459,6 +473,14 @@ img {
         grid-template-columns: 1fr;
         gap: 10px;
         margin-right:3% ;
+    }
+    footer{
+    color: #fff;
+    border-top:solid 1px #fff;
+    margin: 4em;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
     }
 
 
