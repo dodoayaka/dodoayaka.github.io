@@ -29,6 +29,7 @@ h1 {
 }
 p {
     line-height: 1.75;
+    text-align: center;  
 }
 a{
     color: rgb(190, 13, 209);
