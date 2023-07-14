@@ -10,6 +10,7 @@ body {
 footer{
     color: #fff;
     border-top:solid 1px #fff;
+    margin-top:20px;
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
