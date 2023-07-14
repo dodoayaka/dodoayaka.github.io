@@ -316,13 +316,15 @@ img {
 .myphoto{
     text-align:center;
 }
+        
+/*
 footer{
     text-align: center;
     color: #fff;
     border-top:solid 1px #fff;
     margin: 4em;
     font-family: 'Playfair Display', serif;
-}
+}*/
 
 /* タブレットサイズ 761〜1024*/
 @media screen and (min-width:761px) and (max-width:1024px) {
@@ -388,13 +390,14 @@ footer{
         width: 700px;
         height: 550px;
     }
-    footer{
+/*
+footer{
+    text-align: center;
     color: #fff;
     border-top:solid 1px #fff;
     margin: 4em;
-    text-align: center;
     font-family: 'Playfair Display', serif;
-}
+}*/
 }
 
 /* デスクトップサイズ 1025以上*/
@@ -480,11 +483,12 @@ footer{
         gap: 10px;
         margin-right:3% ;
     }
-    footer{
+/*
+footer{
+    text-align: center;
     color: #fff;
     border-top:solid 1px #fff;
     margin: 4em;
-    text-align: center;
     font-family: 'Playfair Display', serif;
-    }
+}*/
 }
