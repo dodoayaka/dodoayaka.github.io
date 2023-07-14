@@ -122,6 +122,12 @@ a{
     position:fixed;
     z-index:9998!important;
 }
+.foot{
+    text-aligen: center;
+}
+.foot p{
+    text-aligen: center;
+}
 .modal_pop img{
     height:80vh;
     position: absolute;
