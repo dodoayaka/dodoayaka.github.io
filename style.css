@@ -1,22 +1,24 @@
 @charset "UTF-8";
 
 body {
+    text-align: center;
     font-size: 20px;
     background-color: rgb(11, 11, 11);
-    margin: 3rem 3em 10em;
     font-family: 'Playfair Display', serif;
     font-family: 'Noto Serif JP', serif;
 }
+/*
 footer{
     color: #fff;
     border-top:solid 1px #fff;
-    margin-top:20px;
+    margin-top: 4em;
     text-align: center;
     font-family: 'Playfair Display', serif;
-}
+}*/
 header{
     font-family: 'Playfair Display', serif;
     font-family: 'Noto Serif JP', serif;
+    text-align: center;
 }
 button{
     font-family: 'Playfair Display', serif;
@@ -24,25 +26,24 @@ button{
 h1 {
     font-size: 50px;
     color: #fff;
-    margin: 1.5em;
+    margin: 1.7em;
     text-align: center;
 }
 p {
     line-height: 1.75;
-    text-align: center;  
 }
 a{
     color: rgb(190, 13, 209);
     text-align: center;
 }
-
+/*
 .item{
     display:grid;
     margin: 1rem;
     text-align: center;
     gap: 15px;
     color:#fff
-}
+}*/
 .movie{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -121,12 +122,6 @@ a{
     height: 100%;
     position:fixed;
     z-index:9998!important;
-}
-.foot{
-    text-aligen: center;
-}
-.foot p{
-    text-aligen: center;
 }
 .modal_pop img{
     height:80vh;
@@ -229,7 +224,7 @@ header {
     width: 90%;
     max-width: 300px;   /*最大幅（調整する）*/
     height: 100%;
-    background:#dcdcdc;
+    background: #ffffff;
     transition: .3s ease-in-out;
     -webkit-transform: translateX(105%);
     transform: translateX(105%);
@@ -277,6 +272,13 @@ ul li{
 
 /*ハンバーガーメニューここまで*/
 
+h1 {
+    font-size: 25px;
+    color: #fff;
+    margin: 1.7em;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     border: 0;
@@ -291,6 +293,10 @@ img {
     color: #fff;
     border:30px;
     margin-bottom: 2em;
+}
+.item{
+    text-align: center;
+    font-size: 15px;
 }
 .portrait-photo{
     display: grid;
@@ -315,15 +321,15 @@ img {
 }
 .myphoto{
     text-align:center;
-}        
-/*
+}
 footer{
-    text-align: center;
     color: #fff;
     border-top:solid 1px #fff;
-    margin: 4em;
+    text-align: center;
+    font-size: 7px;
     font-family: 'Playfair Display', serif;
-}*/
+}
+}
 
 /* タブレットサイズ 761〜1024*/
 @media screen and (min-width:761px) and (max-width:1024px) {
@@ -344,6 +350,10 @@ footer{
         border: 0;
         border-radius: 10px;
     }
+    .item{
+        text-align: center;
+        font-size: 20px;
+    }
     .contents{
         display: none;
     }
@@ -354,7 +364,6 @@ footer{
     }
     .category-title{
         color: #fff;
-        text-align: center;
     }
     button{
         font-size: 20px;
@@ -390,14 +399,14 @@ footer{
         width: 700px;
         height: 550px;
     }
-/*
-footer{
-    text-align: center;
-    color: #fff;
-    border-top:solid 1px #fff;
-    margin: 4em;
-    font-family: 'Playfair Display', serif;
-}*/
+    footer{
+        color: #fff;
+        border-top:solid 1px #fff;
+        margin-top: 4em;
+        text-align: center;
+        font-size:20px;
+        font-family: 'Playfair Display', serif;
+    }
 }
 
 /* デスクトップサイズ 1025以上*/
@@ -483,12 +492,12 @@ footer{
         gap: 10px;
         margin-right:3% ;
     }
-/*
-footer{
-    text-align: center;
-    color: #fff;
-    border-top:solid 1px #fff;
-    margin: 4em;
-    font-family: 'Playfair Display', serif;
-}*/
+    footer{
+        color: #fff;
+        border-top:solid 1px #fff;
+        margin-top: 4em;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+    }
 }
