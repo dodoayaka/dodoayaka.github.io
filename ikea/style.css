@@ -1,0 +1,227 @@
+/*========= レイアウトのためのCSS ===============*/
+p{
+    text-align: center;
+    margin: 20px 0;
+    font-size:1.5rem;
+    list-style: none;
+  }
+  
+  /*==================================================
+  じわっ
+  ===================================*/
+  
+  .blur{
+    animation-name:blurAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes blurAnime{
+    from {
+    filter: blur(10px);
+    transform: scale(1.02);
+    opacity: 0;
+    }
+  
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    }
+  }
+   
+  .blurTrigger{
+      opacity: 0;
+      font-size: 100px;
+      font-family: 'Noto Serif JP', serif;
+      color: #ffffff;
+  }
+  li{
+    list-style: none;
+  }
+  head{
+    text-align: center;
+  }
+
+  body{
+    font-family: 'REM', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 30px;
+    /* padding: 30px; */
+    border: double;
+    border-width: 10px;
+    border-color: #0069ba;
+    /* border-style: double;
+    border-width: thick; */
+  }
+
+  .slider {
+    display: flex;
+    overflow: hidden;
+}
+
+/* ボタン共通設定 */
+.btn03{
+  /*影の基点とするためrelativeを指定*/
+  position: relative;
+  font-size: 30px;
+  padding: 25px;
+  /*ボタンの形状*/
+text-decoration: none;
+display: inline-block;
+  text-align: center;
+  background: transparent;
+border-radius: 25px;
+border: solid 1px #ffffff;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all 0.2s ease;
+}
+
+/*hoverをした後のボタンの形状*/
+.btn03:hover{
+border-color:transparent; 
+}
+/*ボタンの中のテキスト*/
+.btn03 span {
+  font-size: 30px;
+  position: relative;
+  z-index: 2;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    /*テキストの形状*/
+  display: block;
+    /* padding: 10px 30px; */
+  border-radius: 25px;
+  color:#0069ba;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease;
+}
+
+/*== 下に押し込まれる（立体が平面に） */
+
+/*影の設定*/
+.pushdown:before {
+    content:"";
+    /*絶対配置で影の位置を決める*/
+    position: absolute;
+  z-index: -1;
+    top:4px;
+    left:0;
+    /*影の形状*/
+    width: 100%;
+    height: 100%;
+  border-radius: 25px;
+    background-color: #f9d400;
+}
+
+/*hoverの際にY軸に4pxずらす*/
+.pushdown:hover span {
+  background-color: #f9d400;
+  color: #ffffff;
+  /* text-shadow: #0069ba; */
+  transform: translateY(5px);
+}
+
+.abc{
+  list-style: none;
+}
+.foot{
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.photo{
+  font-size: 15px;
+}
+
+.shark{
+  text-decoration : underline;
+  text-decoration-color: #f9d400;
+  font-size: 30px;
+}
+.font{
+  text-decoration: underline;
+  text-decoration-color:#f9d400 ;
+}
+a:link{
+  color: #0069ba;
+}
+a:visited{
+  color: #0069ba;
+}
+/* .insta{
+  margin: none;
+} */
+
+.fluid {
+  width:100vh;/*横幅*/
+  height: 50vh;/*縦幅*/
+  background:#f9d400;/*背景色*/
+  animation: fluidrotate 10s ease 0s infinite;/*アニメーションの設定*/
+  margin:auto;
+  margin-bottom: 30px;
+}
+
+@keyframes fluidrotate {  
+	  
+0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+}
+14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+}
+28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+}
+
+	  
+}
+@media screen and (max-width:760px){
+  /* .rogo{
+    width: auto;
+    height: auto;
+  }
+  .same{
+    width: 100%;
+  } */
+  body{
+    padding: 10px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .font{
+    font-size: 18px;
+  }
+  img{
+    width: 300px;
+    height: auto;
+  }
+  .blurTrigger{
+    font-size: 30px;
+    text-align: center;
+  }
+  .fluid{
+    width:40vh;/*横幅*/
+    height: 15vh;/*縦幅*/
+    background:#f9d400;/*背景色*/
+    animation: fluidrotate 10s ease 0s infinite;/*アニメーションの設定*/
+    margin:auto;
+    margin-bottom: 20px;
+  }
+  .photo{
+    font-size: 12px;
+  }
+}
